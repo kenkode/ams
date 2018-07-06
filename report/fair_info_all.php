@@ -65,7 +65,7 @@ include(ROOT_PATH.'language/'.$lang_code_global.'/lang_common.php');
       <div class="col-xs-12">
         <div class="box box-info">
           <div class="box-header">
-            <h3 style="text-decoration:underline;font-weight:bold;color:orange" class="box-title"><?php echo $_data['text_1'];?></h3>
+            <h3 style="text-decoration:underline;font-weight:bold;color:orange" class="box-title"><?php echo 'Rent Collection Report';?></h3>
           </div>
           <div class="box-body">
             <table style="font-size:13px;" class="table sakotable table-bordered table-striped dt-responsive">
@@ -184,6 +184,6 @@ include(ROOT_PATH.'language/'.$lang_code_global.'/lang_common.php');
   </div>
 </div>
 <!-- /.row -->
-<div align="center"><a class="btn btn-primary btn_save" onClick="javascript:printContent('printable','Fair Collection Report');" href="javascript:void(0);"><?php echo $_data['text_16'];?></a></div>
+<div align="center"><a class="btn btn-primary btn_save" onClick="javascript:printContent('printable','Rent Collection Report');" href="javascript:void(0);"><?php echo $_data['text_16'];?></a></div>
 </body>
 </html>

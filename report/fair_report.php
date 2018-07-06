@@ -22,11 +22,11 @@ if(isset($_GET['mid'])){
 ?>
 
 <section class="content-header">
-  <h1><?php echo $_data['text_1'];?></h1>
+  <h1><?php echo 'Rent Collection Report';?></h1>
   <ol class="breadcrumb">
     <li><a href="<?php echo WEB_URL?>dashboard.php"><i class="fa fa-dashboard"></i><?php echo $_data['home_breadcam'];?></a></li>
     <li class="active"><a href="<?php echo WEB_URL?>report/fair_report.php"><?php echo $_data['text_2'];?></a></li>
-    <li class="active"><?php echo $_data['text_1'];?></li>
+    <li class="active"><?php echo 'Rent Collection';?></li>
   </ol>
 </section>
 <!-- Main content -->
@@ -37,7 +37,7 @@ if(isset($_GET['mid'])){
     <div align="right" style="margin-bottom:1%;"> <a class="btn btn-primary" title="" data-toggle="tooltip" href="<?php echo WEB_URL; ?>report/report.php" data-original-title="<?php echo $_data['back_text'];?>"><i class="fa fa-reply"></i></a> </div>
     <div class="box box-info">
       <div class="box-header">
-        <h3 class="box-title"><?php echo $_data['text_3'];?></h3>
+        <h3 class="box-title"><?php echo 'Rent Collection Report Form';?></h3>
       </div>
       <form onSubmit="return validateMe();" action="<?php echo $form_url; ?>" method="post" enctype="multipart/form-data">
         <div class="box-body">

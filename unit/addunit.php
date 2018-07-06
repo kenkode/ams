@@ -57,11 +57,11 @@ if(isset($_GET['mode']) && $_GET['mode'] == 'view'){
 <!-- Content Header (Page header) -->
 
 <section class="content-header">
-  <h1><?php echo $_data['add_new_unit'];?></h1>
+  <h1><?php echo 'Add House';?></h1>
   <ol class="breadcrumb">
     <li><a href="<?php echo WEB_URL?>dashboard.php"><i class="fa fa-dashboard"></i><?php echo $_data['home_breadcam'];?></a></li>
-    <li class="active"><?php echo $_data['add_new_unit_information_breadcam'];?></li>
-    <li class="active"><?php echo $_data['add_new_unit_breadcam'];?></li>
+    <li class="active"><?php echo 'House Information';?></li>
+    <li class="active"><?php echo 'Add House';?></li>
   </ol>
 </section>
 <!-- Main content -->
@@ -72,7 +72,7 @@ if(isset($_GET['mode']) && $_GET['mode'] == 'view'){
     <div align="right" style="margin-bottom:1%;"> <a class="btn btn-primary" title="" data-toggle="tooltip" href="<?php echo WEB_URL; ?>unit/unitlist.php" data-original-title="<?php echo $_data['back_text'];?>"><i class="fa fa-reply"></i></a> </div>
     <div class="box box-info">
       <div class="box-header">
-        <h3 class="box-title"><?php echo $_data['add_new_unit_entry_form'];?></h3>
+        <h3 class="box-title"><?php echo 'House Entry';?></h3>
       </div>
       <form onSubmit="return validateMe();" action="<?php echo $form_url; ?>" method="post" enctype="multipart/form-data">
         <div class="box-body">

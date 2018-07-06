@@ -109,10 +109,10 @@ if($row_ou_total = mysql_fetch_array($result_ou)){
       <div class="small-box bg-aqua">
         <div class="inner">
           <h3><?php echo $total_unit; ?></h3>
-          <p><?php echo $_data['dashboard_total_unit']; ?></p>
+          <p><?php echo 'Total Houses'; ?></p>
         </div>
         <div class="icon"> <img height="80" width="80" src="img/room.png"></a> </div>
-        <a href="<?php echo WEB_URL; ?>unit/unitlist.php" class="small-box-footer"><?php echo $_data['dashboard_more_info']; ?> <i class="fa fa-arrow-circle-right"></i></a> </div>
+        <a href="<?php echo WEB_URL; ?>unit/unitlist.php" class="small-box-footer"><?php echo  $_data['dashboard_more_info']; ?> <i class="fa fa-arrow-circle-right"></i></a> </div>
     </div>
     <!-- ./col end -->
     <!-- col start -->
@@ -141,28 +141,6 @@ if($row_ou_total = mysql_fetch_array($result_ou)){
     <div class="col-lg-3 col-xs-6">
       <div class="small-box bg-aqua">
         <div class="inner">
-          <h3><?php echo $total_employee; ?></h3>
-          <p><?php echo $_data['dashboard_total_employee']; ?></p>
-        </div>
-        <div class="icon"> <img height="80" width="80" src="img/employee.png"></a> </div>
-        <a href="<?php echo WEB_URL; ?>employee/employeelist.php" class="small-box-footer"><?php echo $_data['dashboard_more_info']; ?> <i class="fa fa-arrow-circle-right"></i></a> </div>
-    </div>
-    <!-- ./col end -->
-	<!-- ./col end -->
-    <div class="col-lg-3 col-xs-6">
-      <div class="small-box bg-aqua">
-        <div class="inner">
-          <h3><?php echo $total_c; ?></h3>
-          <p><?php echo $_data['dashboard_total_committee']; ?></p>
-        </div>
-        <div class="icon"> <img height="80" width="80" src="img/comittee.png"></a> </div>
-        <a href="<?php echo WEB_URL; ?>management/m_committee_list.php" class="small-box-footer"><?php echo $_data['dashboard_more_info']; ?> <i class="fa fa-arrow-circle-right"></i></a> </div>
-    </div>
-    <!-- ./col end -->
-    <!-- col start -->
-    <div class="col-lg-3 col-xs-6">
-      <div class="small-box bg-aqua">
-        <div class="inner">
           <?php if($currency_position == 'left') { ?>
           <h3><?php echo $global_currency.$total_fair; ?></h3>
           <?php } else { ?>
@@ -173,51 +151,7 @@ if($row_ou_total = mysql_fetch_array($result_ou)){
         <div class="icon"> <img height="80" width="80" src="img/fair.png"></a> </div>
         <a href="<?php echo WEB_URL; ?>fair/fairlist.php" class="small-box-footer"><?php echo $_data['dashboard_more_info']; ?> <i class="fa fa-arrow-circle-right"></i></a> </div>
     </div>
-    <!-- ./col end -->
-    <!-- col start -->
-    <div class="col-lg-3 col-xs-6">
-      <div class="small-box bg-aqua">
-        <div class="inner">
-        <?php if($currency_position == 'left') { ?>
-          <h3><?php echo $global_currency.$total_mc; ?></h3>
-           <?php } else { ?>
-           <h3><?php echo $total_mc.$global_currency; ?></h3>
-           <?php } ?>
-          <p><?php echo $_data['dashboard_total_maintenance']; ?></p>
-        </div>
-        <div class="icon"> <img height="80" width="80" src="img/maintenance.png"></a> </div>
-        <a href="<?php echo WEB_URL; ?>maintenance/maintenance_cost_list.php" class="small-box-footer"><?php echo $_data['dashboard_more_info']; ?> <i class="fa fa-arrow-circle-right"></i></a> </div>
-    </div>
-    <!-- ./col end -->
-    <!-- col start -->
-	<!-- col start -->
-    <div class="col-lg-3 col-xs-6">
-      <div class="small-box bg-aqua">
-        <div class="inner">
-         <?php if($currency_position == 'left') { ?>
-          <h3><?php echo $global_currency.$total_fund; ?></h3>
-           <?php } else { ?>
-           <h3><?php echo $total_fund.$global_currency; ?></h3>
-           <?php } ?>
-          <p><?php echo $_data['dashboard_total_fund']; ?></p>
-        </div>
-        <div class="icon"> <img height="80" width="80" src="img/fund.png"></a> </div>
-        <a href="<?php echo WEB_URL; ?>fund/fund_list.php" class="small-box-footer"><?php echo $_data['dashboard_more_info']; ?> <i class="fa fa-arrow-circle-right"></i></a> </div>
-    </div>
-    <!-- col start -->
-    <div class="col-lg-3 col-xs-6">
-      <div class="small-box bg-aqua">
-        <div class="inner">
-        <?php if($currency_position == 'left') { ?>
-          <h3><?php echo $global_currency.$total_utility; ?></h3>
-           <?php } else { ?>
-           <h3><?php echo $total_utility.$global_currency; ?></h3>
-           <?php } ?>
-          <p><?php echo $_data['dashboard_total_owner_utility']; ?></p>
-        </div>
-        <div class="icon"> <img height="80" width="80" src="img/utility.png"></a> </div>
-        <a href="<?php echo WEB_URL; ?>owner_utility/owner_utility_list.php" class="small-box-footer"><?php echo $_data['dashboard_more_info']; ?> <i class="fa fa-arrow-circle-right"></i></a> </div>
-    </div>
+    
     <!-- ./col end -->
     <!-- col start -->
     <div class="col-lg-3 col-xs-6">
@@ -230,17 +164,7 @@ if($row_ou_total = mysql_fetch_array($result_ou)){
         <div class="icon"> <img height="80" width="80" src="img/report.png"></a> </div>
         <a href="<?php echo WEB_URL; ?>report/report.php" class="small-box-footer"><?php echo $_data['dashboard_more_info']; ?> <i class="fa fa-arrow-circle-right"></i></a> </div>
     </div>
-    <!-- ./col end -->
-    <!-- col start -->
-    <div class="col-lg-3 col-xs-6">
-      <div class="small-box bg-aqua">
-        <div class="inner">
-          <h3><?php echo $_data['dashboard_settings']; ?></h3>
-          <p>&nbsp;</p>
-        </div>
-        <div class="icon"> <img height="80" width="80" src="img/setting.png"></a> </div>
-        <a href="<?php echo WEB_URL; ?>setting/setting.php" class="small-box-footer"><?php echo $_data['dashboard_more_info']; ?> <i class="fa fa-arrow-circle-right"></i></a> </div>
-    </div>
+    
     <!-- ./col end -->
   </div>
   <!-- /.row end -->

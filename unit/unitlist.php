@@ -26,11 +26,11 @@ if(isset($_GET['m']) && $_GET['m'] == 'up'){
 <!-- Content Header (Page header) -->
 
 <section class="content-header">
-  <h1><?php echo $_data['unit_list_title'];?></h1>
+  <h1><?php echo 'Houses List';?></h1>
   <ol class="breadcrumb">
     <li><a href="<?php echo WEB_URL?>dashboard.php"><i class="fa fa-dashboard"></i><?php echo $_data['home_breadcam'];?></a></li>
     <li class="active"><?php echo $_data['add_new_unit_information_breadcam'];?></li>
-    <li class="active"><?php echo $_data['unit_list_title'];?></li>
+    <li class="active"><?php echo 'Houses Information';?></li>
   </ol>
 </section>
 <!-- Main content -->
@@ -49,7 +49,7 @@ if(isset($_GET['m']) && $_GET['m'] == 'up'){
     <div align="right" style="margin-bottom:1%;"> <a class="btn btn-primary" data-toggle="tooltip" href="<?php echo WEB_URL; ?>unit/addunit.php" data-original-title="<?php echo $_data['add_unit'];?>"><i class="fa fa-plus"></i></a> <a class="btn btn-primary" data-toggle="tooltip" href="<?php echo WEB_URL; ?>dashboard.php" data-original-title="<?php echo $_data['home_breadcam'];?>"><i class="fa fa-dashboard"></i></a> </div>
     <div class="box box-info">
       <div class="box-header">
-        <h3 class="box-title"><?php echo $_data['unit_list_title'];?></h3>
+        <h3 class="box-title"><?php echo 'Houses List';?></h3>
       </div>
       <!-- /.box-header -->
       <div class="box-body">
@@ -84,7 +84,7 @@ if(isset($_GET['m']) && $_GET['m'] == 'up'){
                     <div class="modal-content">
                       <div class="modal-header orange_header">
                         <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true"><i class="fa fa-close"></i></span></button>
-                        <h3 class="modal-title"><?php echo $_data['unit_details'];?></h3>
+                        <h3 class="modal-title"><?php echo 'House Details';?></h3>
                       </div>
                       <div class="modal-body model_view" align="center">&nbsp;
                         <div>&nbsp;</div>
@@ -95,7 +95,6 @@ if(isset($_GET['m']) && $_GET['m'] == 'up'){
                         <div class="row">
                           <div class="col-xs-12"> <b><?php echo $_data['floor_no'];?> :</b> <?php echo $row['floor_no']; ?><br/>
                             <b><?php echo $_data['unit_no'];?>:</b> <?php echo $row['unit_no']; ?><br/>
-                            <b><?php echo "Price";?>:</b> <?php echo $row['price']; ?><br/>
                             <b><?php echo "Type";?>:</b> <?php echo $row['type']; ?><br/>
                             <b><?php echo "Status";?>:</b> <?php 
                             if($row['status'] == 1){
