@@ -1,5 +1,5 @@
 <?php
-define('CURRENCY', '$');
+define('CURRENCY', 'Kshs.');
 define('WEB_URL', 'http://localhost:84/ams/');
 define('ROOT_PATH', 'C:\xampp\htdocs\ams/');
 

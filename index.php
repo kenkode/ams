@@ -78,7 +78,7 @@ function make_safe($variable)
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Optimum Apartment Management System</title>
+<title>AMS</title>
 <!-- BOOTSTRAP STYLES-->
 <link href="assets/css/bootstrap.css" rel="stylesheet" />
 <!-- FONTAWESOME STYLES-->
@@ -97,16 +97,23 @@ function make_safe($variable)
   <br/>
   <br/>
   <div class="row text-center ">
-    <div class="col-md-12"><br/>
-      <span style="font-size:35px;font-weight:bold;color:red;">OPTIMUM</span> <span style="font-size:18px;">Apartment Management System</span></div>
+    <!-- <div class="col-md-12"><br/>
+      <span style="font-size:35px;font-weight:bold;color:red;">OPTIMUM</span> <span style="font-size:18px;">Apartment Management System</span></div>-->
   </div>
   <br/>
   <div class="row ">
     <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
       <div style="margin-bottom:8px;padding-top:2px;width:100%;height:25px;background:#E52740;color:#fff; display:<?php echo $msg; ?>" align="center">Wrong login information</div>
       <div class="panel panel-default" id="loginBox">
-        <div class="panel-heading"> <strong> Enter Login Details </strong> </div>
+				
         <div class="panel-body">
+			  	<div class="row text-center ">
+            <div class="col-md-12"><br/>
+							<span style="font-size:35px;font-weight:bold;color:#00a65a;"><img src="img/house_icon1.png" style="margin-top:-10px;" width="30" height="30" /> AMS</span> <span style="font-size:18px;"></span>
+						</div>
+          </div>
+				<br>
+        <div> <strong> Enter Login Details </strong> </div>
           <form onSubmit="return validationForm();" role="form" id="form" method="post">
             <br />
             <div class="form-group input-group"> <span class="input-group-addon"><i class="fa fa-tag"  ></i></span>
@@ -119,10 +126,7 @@ function make_safe($variable)
               <select name="ddlLoginType" onChange="mewhat(this.value);" id="ddlLoginType" class="form-control">
                 <option value="">--Select Type--</option>
                 <option value="1">Admin</option>
-                <option value="2">Owner</option>
-                <option value="3">Employee</option>
                 <option value="4">Renter</option>
-                <option value="5">Super Admin</option>
               </select>
             </div>
              <div id="x_branch" style="display:none;" class="form-group input-group"> <span class="input-group-addon"><i class="fa fa-plus"  ></i></span>
